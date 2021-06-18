@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="FortuneButton">Get a fortune</button>
+    <form id='compliment-form'>
+        <input
+          type='text'
+          id="compliment"
+          placeholder="Help us encourage others"/>
+          <button type="button" id="addCompliment">Add a compliment</button>
+    </form>
+
+    <button id="changeBcolor">Change Color</button>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+    document.getElementById("FortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+
+      document.getElementById("complimentButton").onclick = function(){
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+    </script>
+    <script>
+    document.getElementById("changeBcolor").onclick = function(){
+      let randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor;
+    }
+    </script>
+    <script src="index.js"> </script>
+  </body>
+</html>
