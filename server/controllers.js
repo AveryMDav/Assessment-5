@@ -16,6 +16,10 @@ addCompliment: (req, res) => {
     return res.status(200).send('Thank you for your support!')
 },
 
+getAllCompliments: (req,res) => {
+    res.status(200).send(compliments)
+},
+
 getFortune: (req,res) => {
     let randomIndex = Math.floor(Math.random() * fortune.length);
     let randomFortune = fortune[randomIndex];
