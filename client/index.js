@@ -6,7 +6,6 @@ const compCallBack = function({data: compliments}){
     displayCompliments(compliments)
     console.log(compliments)
 }
-// ({data: compliments}) => displayCompliments(compliments)
 complimentForm.addEventListener('click', complimentSubmitHandler);
 showAllBtn.addEventListener('click', showAllComps);
 

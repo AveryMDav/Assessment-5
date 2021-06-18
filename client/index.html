@@ -7,19 +7,18 @@
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
     <button id="FortuneButton">Get a fortune</button>
-    <button id="ShowAll">Show all compliments</button>
+    
     <form id='compliment-form'>
+    <button type="button" id="ShowAll">Show all compliments</button>
         <input
           type='text'
           id="compliment"
           placeholder="Help us encourage others"/>
           <button type="button" id="addCompliment">Add a compliment</button>
+          <button type="button" id="changeBcolor">Change Color</button>
+          <section type='text' id="compliment-container"></section>
     </form>
-
-    <button id="changeBcolor">Change Color</button>
     <form id='compliment-data'>
-
-    <section id="compliment-container"></section>
 
     </form>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -44,7 +43,7 @@
     <script>
     document.getElementById("changeBcolor").onclick = function(){
       let randomColor = Math.floor(Math.random()*16777215).toString(16);
-        document.body.style.backgroundColor = "#" + randomColor;
+        document.body.style.background = "#" + randomColor;
     }
     </script>
     <script src="index.js"> </script>

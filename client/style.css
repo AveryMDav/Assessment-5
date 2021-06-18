@@ -1,5 +1,99 @@
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
 #compliment-container {
-    height: 500px;
-    width: 30%;
+    height:auto;
+    width: auto;
     color: black;
+}
+
+#complimentButton {
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 5px;
+  border-radius: 50%; 
+  width: 150px;
+  height: 150px;
+  border: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  background: rgb(53, 53, 53);
+  text-shadow: 0 3px 1px rgb(31, 31, 31);
+  box-shadow: 0 8px 0 rgb(31, 31, 31), 
+    0 15px 20px rgba(0,0,0,.35);
+  text-transform: uppercase;
+  transition: .4s all ease-in;
+  outline: none; 
+  cursor: pointer;
+  text-align: center;
+}
+
+#FortuneButton {
+  margin-left: 340px;
+  margin-top: 5px;
+  position: absolute;
+  border-radius: 50%; 
+  width: 150px;
+  height: 150px;
+  border: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  background: blue;
+  text-shadow: 0 3px 1px rgb(12, 12, 199);
+  box-shadow: 0 8px 0 rgb(12, 12, 199), 
+    0 15px 20px rgba(0,0,0,.35);
+  text-transform: uppercase;
+  transition: .4s all ease-in;
+  outline: none; 
+  cursor: pointer;
+  text-align: center;
+}
+
+#compliment-form {
+    margin: auto;
+    width: 700px;
+}
+
+#ShowAll {
+  border-radius: 50%; 
+  width: 150px;
+  height: 150px;
+  border: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  background: red;
+  text-shadow: 0 3px 1px rgba(122,17,8,.8);
+  box-shadow: 0 8px 0 rgb(183,9,0), 
+    0 15px 20px rgba(0,0,0,.35);
+  text-transform: uppercase;
+  transition: .4s all ease-in;
+  outline: none; 
+  cursor: pointer;
+  text-align: center;
+}
+#changeBcolor {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    border-color: black;
+}
+
+#compliment {
+    margin-left: 75px;
+    width: 200px;
+    height: 25px;
+}
+
+#compliment-container {
+    margin-left: 230px;
+}
+
+#addCompliment {
+    width: 150px;
+    height: 30px;
 }
