@@ -25,4 +25,8 @@ getFortune: (req,res) => {
     let randomFortune = fortune[randomIndex];
     return res.status(200).send(randomFortune);
     },
+
+deleteCompliment: (req,res) => {
+    return res.status(200).send(console.log('hello!'))
+}
 }

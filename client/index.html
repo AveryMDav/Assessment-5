@@ -5,9 +5,6 @@
      <link rel="stylesheet" href="style.css">
   </head>
   <body class="container">
-    <button id="complimentButton">Get a compliment</button>
-    <button id="FortuneButton">Get a fortune</button>
-    
     <form id='compliment-form'>
     <button type="button" id="ShowAll">Show all compliments</button>
         <input
@@ -19,8 +16,11 @@
           <section type='text' id="compliment-container"></section>
     </form>
     <form id='compliment-data'>
-
     </form>
+    <div class="button-container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="FortuneButton">Get a fortune</button>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
     document.getElementById("FortuneButton").onclick = function () {

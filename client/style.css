@@ -3,15 +3,11 @@ body {
 }
 
 #compliment-container {
-    height:auto;
-    width: auto;
     color: black;
 }
 
+
 #complimentButton {
-  position: absolute;
-  margin-left: 75px;
-  margin-top: 5px;
   border-radius: 50%; 
   width: 150px;
   height: 150px;
@@ -31,9 +27,7 @@ body {
 }
 
 #FortuneButton {
-  margin-left: 340px;
-  margin-top: 5px;
-  position: absolute;
+  margin-left: 100px;
   border-radius: 50%; 
   width: 150px;
   height: 150px;
@@ -42,8 +36,8 @@ body {
   font-family: Arial, sans-serif;
   font-weight: 900;
   background: blue;
-  text-shadow: 0 3px 1px rgb(12, 12, 199);
-  box-shadow: 0 8px 0 rgb(12, 12, 199), 
+  text-shadow: 0 3px 1px rgb(14, 14, 117);
+  box-shadow: 0 8px 0 rgb(14, 14, 117), 
     0 15px 20px rgba(0,0,0,.35);
   text-transform: uppercase;
   transition: .4s all ease-in;
